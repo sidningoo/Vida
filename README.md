@@ -1,8 +1,8 @@
-Vida									|
-Proposal - Group 189.	|	
+**Vida									|
+Proposal - Group 189.**	|	
 ______________________
 ________________________________________________________________________________________________________________________________________
-Team Members.
+**Team Members.**
 
 Sahabudeen Asimudeen - 3035577997
 
@@ -55,19 +55,18 @@ List of features & functions:
 
 5. Separation of different game parts 
 
-We will implement the road map of the game - which contains the roadmap, random scenarios, etc- on one file. 
+-	We will implement the road map of the game - which contains the roadmap, random scenarios, etc- on one file. 
 
 -	The mini-games will also be coded on to a seperate file which will be called in the roadmap file of the game.
 
--	The main file that would contain functions that will be accessible at any point during the game. These functions include: Checking
-	your current life status in the game, going back to the game, Saving and Exiting, Accessing the HWH meters. It essentially works as a
-	pause menu.
+-	The main file that would contain functions that will be accessible at any point during the game. These functions include:
+	Checking your current life status in the game, going back to the game, Saving and Exiting, Accessing the HWH meters. It
+	essentially works as a pause menu.
 
 6. Dynamic Memory Management
 -	Implement New and Delete functions to dynamically allocate memory. 
 
--	The game board would then be built into the main file
-
+-	The game board would then be built into the main file.
 ________________________________________________________________________________________________________________________________________
 
 
