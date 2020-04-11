@@ -8,9 +8,11 @@ Sahabudeen Asimudeen - 3035577997
 
 Asim is majoring in Information Systems and Computer Science. He takes great interest in the field of software development.
 
+
 Ningoo Siddhant Darpan - 3035577973
 
 Siddhant is majoring in Information Systems and Computer Science. He finds coding interesting and would like to broaden his horizons and apply business concepts in it. 
+
 
 Vida
 
