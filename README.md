@@ -1,4 +1,4 @@
-#**Vida									|
+**Vida									|
 Proposal - Group 189.**	|	
 ______________________
 ________________________________________________________________________________________________________________________________________
@@ -23,14 +23,14 @@ This game simulates a person’s travel through his or her life, from college to
 ________________________________________________________________________________________________________________________________________
 **List of features & functions:**
 
-*1. Pop-up questions to make daily decisions*
+***1. Pop-up questions to make daily decisions***
 
 -	This function will randomly throw questions to the player to choose between 2 activities at any point of the game. These 		questions ultimately affect their 
 
 -	The questions are simple questions like “Go out with friends or with family?”
 
 
-*2. Mini-game redirector* 
+***2. Mini-game redirector*** 
 
 -	For certain decisions made, the user would have to win a mini-game to complete the desired action. For example, if the user
 	chooses to make a risky investment, he/she will have to play the mini-game to make the investment. If the player wins, he/she 
@@ -38,23 +38,23 @@ ________________________________________________________________________________
 	the risk. 
 
 
-*3. Health, Wealth & Happiness (HWH) meter counter*
+***3. Health, Wealth & Happiness (HWH) meter counter***
 
 -	This function will add and subtract points from respective meters based on player decisions.
 
 -	If either one of the meters fall under 5 points, this function will redirect the player to one of the respective functions.
 
 
-*4. Save game function*
+***4. Save game function***
 
--	The game would be dealing with each level recognized with a number. Once the player enters the command to save the game, the 
+>	The game would be dealing with each level recognized with a number. Once the player enters the command to save the game, the 
 	players game progress (eg. Game Level, HWH meters, career, marital status, etc.) would be saved in a text file saved in the 
 	working directory of the game file.
 
--	Once the game is relaunched, the game would detect for any saved game files in the directory, and the player can choose if they 
+>	Once the game is relaunched, the game would detect for any saved game files in the directory, and the player can choose if they 
 	want to continue with that game or a new one.
 
-*5. Separation of different game parts* 
+***5. Separation of different game parts*** 
 
 -	We will implement the road map of the game - which contains the roadmap, random scenarios, etc- on one file. 
 
@@ -64,7 +64,7 @@ ________________________________________________________________________________
 	Checking your current life status in the game, going back to the game, Saving and Exiting, Accessing the HWH meters. It
 	essentially works as a pause menu.
 
-*6. Dynamic Memory Management*
+***6. Dynamic Memory Management***
 -	Implement New and Delete functions to dynamically allocate memory. 
 
 -	The game board would then be built into the main file.
