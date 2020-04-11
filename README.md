@@ -47,11 +47,11 @@ ________________________________________________________________________________
 
 ***4. Save game function***
 
->	The game would be dealing with each level recognized with a number. Once the player enters the command to save the game, the 
+-	The game would be dealing with each level recognized with a number. Once the player enters the command to save the game, the 
 	players game progress (eg. Game Level, HWH meters, career, marital status, etc.) would be saved in a text file saved in the 
 	working directory of the game file.
 
->	Once the game is relaunched, the game would detect for any saved game files in the directory, and the player can choose if they 
+-	Once the game is relaunched, the game would detect for any saved game files in the directory, and the player can choose if they 
 	want to continue with that game or a new one.
 
 ***5. Separation of different game parts*** 
