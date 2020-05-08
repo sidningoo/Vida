@@ -76,7 +76,7 @@ int new(){
 }
 
 int existing(name, health, wealth, happiness, career){
-  cout << "Hey, ” << name  welcome back !" << endl;
+  cout << "Hey, ” << name <<  "welcome back !" << endl;
   cout << "Below were your HWH meters" << endl;
   cout << "Health = " << health << " / 10" << endl;
   cout << "Wealth = " << health << " / 10" << endl;
