@@ -81,36 +81,37 @@ int existing(name, health, wealth, happiness, career){
   cout << "Health = " << health << " / 10" << endl;
   cout << "Wealth = " << health << " / 10" << endl;
   cout << "Happiness = " << health << " / 10" << endl;
-  Cout << “Let’s take you back to the career of” << career;
-  If (career == Gamedeveloper){
+  cout << “Let’s take you back to the career of” << career;
+  if (career == Gamedeveloper){
       Gamedeveloper(counter)
   }
-  If (career ==teacher){
+  if (career ==teacher){
      Teacher(counter)
   }
-  If (career ==doctor){
+  if (career ==doctor){
     Doctor(counter)
   }
-  If (career ==actor ){
+  if (career ==actor ){
      Actor(counter)
   }
 }
 
 int main(){
-	String name;
-	Int a, b, c, counter;
-	String career;
+	string name;
+	int a, b, c, counter;
+	string career;
 	ifstream fin;
 	fin.open(“save_file”);
-If (fin){
-        getline(in, name, '\n');
-        getline(in, a, '\n');
-        getline(in, b, '\n');
-        getline(in, c, '\n');
-        getline(in, career, ‘\n’);
-        Getline(in, counter, ‘\n’);
-        existing(name, a, b,c, career, counter)
-}
-Else{
-New()
+	if (fin){
+		getline(in, name, '\n');
+		getline(in, a, '\n');
+		getline(in, b, '\n');
+		getline(in, c, '\n');
+		getline(in, career, ‘\n’);
+		getline(in, counter, ‘\n’);
+		existing(name, a, b,c, career, counter)
+	}
+	else{
+		new()
+	}
 }
