@@ -20,20 +20,19 @@ bool minigame(){
 	
   string * answers;
   answers = new string [10];
-  answers[0] = "Benjamin Franklin";
-  answers[1] = "Ottawa";
-  answers[2] = "Lira";
-  answers[3] = "Brazil";
-  answers[4] = "Elon Musk";
+  answers[0] = "BENJAMIN FRANKLIN";
+  answers[1] = "OTTAWA";
+  answers[2] = "LIRA;
+  answers[3] = "BRAZIL";
+  answers[4] = "ELON MUSK";
 	
   int randomnumtracker;
   string inputanswer;
 
   cout << "Welcome to the minigame, here we will give you a randomly generated question, you will have 15 seconds to answer the question, or else you loose" << endl;
   cout << "Example: Question: What is the name of our planet?" <<endl;
-  cout << "         Answer: Earth" << endl;
+  cout << "Answer: EARTH" << endl;
   cout << "Do remember to capitalize your answers or else they would would be renderded void" << endl; 
-  cout << "Alright, here we go" ;
   cout << "Here's your question" ;
   srand(time(NULL));
   randomnumtracker = rand() % 10;
@@ -608,7 +607,7 @@ void teacher(){
 }
 
 
-void actor(name, counter){
+void actor(counter){
   while (health >= 2 || wealth >= 2 || happiness >= 2) {
     char questioninput;
 
@@ -620,7 +619,7 @@ void actor(name, counter){
       cout << "C. I had a stomachache; I was just a little nervous. " << endl;
       cout << "D. Sorry! I am very sorry!! " << endl;
       cin >> questioninput;
-  
+
       if (questioninput == "A"){
         happiness -= 2;
         cout << "You made the director angry, happiness -2"; << endl;
@@ -643,7 +642,7 @@ void actor(name, counter){
       cout << "Happiness: " << happiness << endl;
       counter += 1;
     }
-    
+
     // __________________________________________________________________________//
 
     if (counter == 1){
@@ -653,9 +652,9 @@ void actor(name, counter){
       cout << "B. They should just offer me the part. I’m so perfect for it." << endl;
       cout << "C. I’m sorry. It will not happen again" << endl;
       cout << "D. Whatever, other directors would want me anyway" << endl;
-  
+
       cin >> questioninput;
-  
+
       if (questioninput == "A"){
         happiness -= 3;
         cout << "You come out as very arrogant and the agent leaves you, happiness -3" << endl;
@@ -686,9 +685,9 @@ void actor(name, counter){
       cout << "Will you accept the offer?" << endl;
       cout << "A. Yes" << endl;
       cout << "B. No" << endl;
-  
+
       cin >> questioninput;
-  
+
       if (questioninput == "A"){
         happiness += 1;
         cout << "You are back in the industry and everyone welcomes you, happiness +1" << endl;
@@ -701,7 +700,7 @@ void actor(name, counter){
       cout << "Wealth: " << wealth << endl;
       cout << "Happiness: " << happiness << endl;
       counter += 1;
-      
+
     }
 
 
@@ -715,9 +714,9 @@ void actor(name, counter){
       cout << "B. WIll Smith" << endl;
       cout << "C. Adriana Alba" << endl;
       cout << "D. Eiza Ganzalez" << endl;
-  
+
       cin >> questioninput;
-  
+
       if (questioninput == "A"){
         wealth -= 3;
         cout << "How do you not know this??? You only get to be a supporting actor/actress, wealth -3" << endl;
@@ -740,7 +739,7 @@ void actor(name, counter){
       cout << "Your acting was remarkable." << endl;
       counter += 1;
     }
-    
+
     //__________________________________________________________________________//
 
     if (counter == 4){
@@ -749,9 +748,9 @@ void actor(name, counter){
       cour << "but you haven’t spent much time with your family and friends. Will you take the offer or spend time with your family ?" << endl;
       cout << "A. Take the once in a lifetime opportunity given by the production company " << endl; //play mini game//
       cout << "B. Spend more time with family " << endl;
-  
+
       cin >> questioninput;
-  
+
       if (questioninput == "A"){
         if (minigame())
           cout << "You got the job !, wealth +1"<< endl;
@@ -761,7 +760,6 @@ void actor(name, counter){
           health -= 2;
           cout << "You overwork yourself, health -2" << endl;
         }
-      }
       if (questioninput == "B"){
         if (minigame()){
           cout << "Your relationship with your family has gotten stronger, happiness +1"<< endl;
@@ -772,13 +770,14 @@ void actor(name, counter){
           happiness -= 1;
         }
       }
-      cout << "Health: " << health  << endl;
-      cout << "Wealth: " << wealth << endl;
-      cout << "Happiness: " << happiness << endl;
-      counter += 1;
+        cout << "Health: " << health  << endl;
+        cout << "Wealth: " << wealth << endl;
+        cout << "Happiness: " << happiness << endl;
+        counter += 1;
       }
 
-      
+
+
 
     //__________________________________________________________________________//
 
@@ -789,9 +788,9 @@ void actor(name, counter){
       cout << "B. Shawnny Mendes" << endl;
       cout << "C. Gurl Gadot" << endl;
       cout << "D. Zenfiya" << endl;
-  
+
       cin >> questioninput;
-  
+
       if (questioninput == "A"){
         health -= 3;
         cout << "Huff puff your lifestyle has become very unhealthy with this man !!!, health -3" << endl;
@@ -852,13 +851,9 @@ void actor(name, counter){
         }
         else{
           happiness -= 2;
-          cout << "You've been scammed !!!"" << endl;
+          cout << "You've been scammed !!!"  << endl;
         }
-      cout << "Health: " << health << endl;
-      cout << "Wealth: " << wealth << endl;
-      cout << "Happiness: " << happiness << endl;
-      counter += 1;
-      }
+    }
     if (health =< 2 || wealth =< 2 || happiness =< 2){
       cout << "Oh no one or more of your meters are below 3" << endl;
       cout << "You will have to restart your career" << endl;
@@ -866,9 +861,10 @@ void actor(name, counter){
       health = 5;
       wealth = 5;
       happiness = 5;
-    }
+  }
 }
-
+}
+}
 
 void doctor(counter){
   while (health >= 2 || wealth >= 2 || happiness >= 2){
