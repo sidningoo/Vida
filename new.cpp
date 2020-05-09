@@ -70,19 +70,19 @@ int teacher(){
       cout << "     D.  Primary School" << endl;
       cin >> questioninput ;
 
-      if (questioninput == A){
+      if (questioninput == "A"){
         wealth += 2;
         cout << "Your Wealth increased by 2!" << endl;
       }
-      if (questioninput == B){
+      if (questioninput == "B"){
         happiness += 2;
 	cout << "Your Happiness increased by 2!" << endl;
       }
-      if (questioninput == C){
+      if (questioninput == "C"){
         happiness += 1;
 	cout << "Your Happiness increased by 1!" << endl;
       }
-      if (questioninput == D){
+      if (questioninput == "D"){
         health += 1;
 	cout << "Your Health increased by 1!" << endl;
       }
@@ -98,15 +98,15 @@ int teacher(){
       cout << "     C.  Go to bed" <<endl;
       cin >> questioninput ;
 
-      if (questioninput == A){
+      if (questioninput == "A"){
         Happiness += 2;
         cout << "Your Happiness increased by 2!" << endl;
       }
-      if (questioninput == B){
+      if (questioninput == "B"){
         happiness -= 2;
 	cout << "Your Happiness decreased by 2!" << endl;
       }
-      if (questioninput == C){
+      if (questioninput == "C"){
         health += 1;
 	cout << "Your Health increased by 1!" << endl;
       }
@@ -123,7 +123,7 @@ int teacher(){
       cout << "     D.  Dont take the bribe and report the student" << endl;
       cin >> questioninput ;
 
-      if (questioninput == A){
+      if (questioninput == "A"){
         wealth += 3;
         cout << "Your Wealth increased by 3!" << endl;
 	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
@@ -133,7 +133,7 @@ int teacher(){
 	wealth = 5;
 	happiness = 5;
       }
-      if (questioninput == B){
+      if (questioninput == "B"){
         happiness += 1;
 	cout << "Your Happiness increased by 1!" << endl;
 	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
@@ -143,7 +143,7 @@ int teacher(){
 	wealth = 5;
 	happiness = 5;      
       }
-      if (questioninput == C){
+      if (questioninput == "C"){
         wealth += 3;
 	cout << "Your Wealth increased by 3!" << endl;
 	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
@@ -153,7 +153,7 @@ int teacher(){
 	wealth = 5;
 	happiness = 5;    
       }
-      if (questioninput == D){
+      if (questioninput == "D"){
         happiness -= 2;
 	cout << "The student got expelled and other students are afraid of you now." << endl;
 	cout << "Your Happiness decreased by 2!" << endl;
@@ -172,15 +172,15 @@ int teacher(){
         cout << "     B.  Wealth" <<endl;
         cout << "     C.  Happiness" <<endl;
 	cin >> choiceselection ;
-	if (choiceselection == A){
+	if (choiceselection == "A"){
         health += 1;
 	cout << "Your health increased by 1!" << endl;
       	}
-      	if (choiceselection == B){
+      	if (choiceselection == "B"){
         wealth += 1;
 	cout << "Your Wealth increased by 1!" << endl;
       	}
-      	if (choiceselection == C){
+      	if (choiceselection == "C"){
         happiness += 1;
 	cout << "Your Happiness increased by 1!" << endl;
       	}
@@ -200,17 +200,17 @@ int teacher(){
       cout << "     C.  Stay back at the school and finish your work" <<endl;
       cin >> questioninput ;
 
-      if (questioninput == A){
+      if (questioninput == "A"){
         health += 2;
 	cout << "You managed to go to bed early and get all the rest needed"      
         cout << "Your Health increased by 2!" << endl;
       }
-      if (questioninput == B){
+      if (questioninput == "B"){
         health -= 2;
 	cout << "Wasted!" << endl << "You got drunk and passed out." << endl;
 	cout << "Your health increased by 2!" << endl;
       }
-      if (questioninput == C){
+      if (questioninput == "C"){
         happiness -= 2;
 	cout << "Your Happiness decreased by 2!" << endl;
       }
@@ -227,20 +227,20 @@ int teacher(){
       cout << "     D.  Let them take the day off" << endl;
       cin >> questioninput ;
 
-      if (questioninput == A){
+      if (questioninput == "A"){
         happiness += 2;
 	cout << "Your students are not too comfortable with you anymore" << endl;
         cout << "Your Happiness decreased by 2!" << endl;
       }
-      if (questioninput == B){
+      if (questioninput == "B"){
         health += 1;
 	cout << "Your Health increased by 2!" << endl;
       }
-      if (questioninput == C){
+      if (questioninput == "C"){
         happiness -= 1;
 	cout << "Your Happiness decreased by 1!" << endl;
       }
-      if (questioninput == D){
+      if (questioninput == "D"){
         happiness += 1;
 	cout << "Your Happiness increased by 1!" << endl;
       }
@@ -257,20 +257,20 @@ int teacher(){
       cout << "     D.  Do nothing special and continue with regular in-class lectures" << endl;
       cin >> questioninput ;
 
-      if (questioninput == A){
+      if (questioninput == "A"){
         wealth += 1;
 	cout << "You and your students earned a little money" << endl;
         cout << "Your Wealth increased by 1!" << endl;
       }
-      if (questioninput == B){
+      if (questioninput == "B"){
         health += 1;
 	cout << "Your Health increased by 1!" << endl;
       }
-      if (questioninput == C){
+      if (questioninput == "C"){
         happiness += 1;
 	cout << "Your Happiness increased by 1!" << endl;
       }
-      if (questioninput == D){
+      if (questioninput == "D"){
         happiness += 1;
 	cout << "Your Happiness decreased by 1!" << endl;
       }
@@ -289,15 +289,15 @@ int teacher(){
         cout << "     B.  Wealth" <<endl;
         cout << "     C.  Happiness" <<endl;
 	cin >> choiceselection ;
-	if (choiceselection == A){
+	if (choiceselection == "A"){
         health += 1;
 	cout << "Your health increased by 1!" << endl;
       	}
-      	if (choiceselection == B){
+      	if (choiceselection == "B"){
         wealth += 1;
 	cout << "Your Wealth increased by 1!" << endl;
       	}
-      	if (choiceselection == C){
+      	if (choiceselection == "C"){
         happiness += 1;
 	cout << "Your Happiness increased by 1!" << endl;
       	}
@@ -315,12 +315,12 @@ int teacher(){
       cout << "     B.  Go to the other school which also gives the higher salary" <<endl;
       cin >> questioninput ;
 
-      if (questioninput == A){
+      if (questioninput == "A"){
         happiness += 1;
 	cout << "You decided to stay and realized that you can't leave this amazing school" << endl;
         cout << "Your Happiness increased by 1!" << endl;
       }
-      if (questioninput == B){
+      if (questioninput == "B"){
         wealth += 1;
 	cout << "Your Wealth increased by 1!" << endl;
       }
@@ -329,6 +329,14 @@ int teacher(){
       cout << "Happiness = " << health << " / 10" << endl;
       counter += 1;
     }
+  }
+  if (health < 1 || wealth < 1 || happiness < 1){
+    cout << "Oh no one or more of your meters are below 1" << endl;
+    cout << "You will have to restart your career" << endl;
+    counter = 0;
+    health = 5;
+    wealth = 5;
+    happiness = 5;
   }
 }
 
