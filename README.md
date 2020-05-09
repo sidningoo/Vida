@@ -47,20 +47,12 @@ ________________________________________________________________________________
 -	Once the game is relaunched, the game would detect for any saved game files in the directory, and the player can choose if they 
 	want to continue with that game or a new one.
 
-***5. Separation of different game parts*** 
+***4. Separation of different game parts*** 
 
--	We will implement the road map of the game - which contains the roadmap, random scenarios, etc- on one file. 
+-	The main game file is seperate from the saved version of the file, so that if needed the player can choose to start a new 		instead of and existing one and vice versa.
 
--	The mini-games will also be coded on to a seperate file which will be called in the roadmap file of the game.
-
--	The main file that would contain functions that will be accessible at any point during the game. These functions include:
-	Checking your current life status in the game, going back to the game, Saving and Exiting, Accessing the HWH meters. It
-	essentially works as a pause menu.
-
-***6. Dynamic Memory Management***
--	Implement New and Delete functions to dynamically allocate memory. 
-
--	The game board would then be built into the main file.
+***5. Dynamic Memory Management***
+-	Implementation of dynamic arrays when needed. 
 ________________________________________________________________________________________________________________________________________
 
 
