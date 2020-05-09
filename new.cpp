@@ -49,7 +49,10 @@ bool minigame(){
     cout << "Correct Answer!" << endl;
     return true;
   }
-  
+  delete [] questions;
+  questions = NULL;
+  delete [] answers;
+  answers = NULL;
 }
 
 int Gamedeveloper(){}
