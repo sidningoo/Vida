@@ -159,7 +159,36 @@ int teacher(){
       cout << "Wealth = " << health << " / 10" << endl;
       cout << "Happiness = " << health << " / 10" << endl;
       counter += 1;
-         
+      
+      string choiceselection;
+      cout << "POPQUIZ" << endl;
+      if (miniquiz()){
+        cout << "Congratulations, you can add a point to any one of your meters" << endl;
+	cout << "Which meter would you like to add a point to ?" << endl;
+	cout << "     A.  Health" << endl;
+        cout << "     B.  Wealth" <<endl;
+        cout << "     C.  Happiness" <<endl;
+	cin >> choiceselection ;
+	if (choiceselection == A){
+        health += 1;
+	cout << "Your health increased by 1!" << endl;
+      	}
+      	if (choiceselection == B){
+        wealth += 1;
+	cout << "Your Wealth increased by 1!" << endl;
+      	}
+      	if (choiceselection == C){
+        happiness += 1;
+	cout << "Your Happiness increased by 1!" << endl;
+      	}
+      	cout << "Health = " << health << " / 10" << endl;
+      	cout << "Wealth = " << health << " / 10" << endl;
+      	cout << "Happiness = " << health << " / 10" << endl;
+      }
+      else{
+        "Too bad, you can't increase one of your meters, better luck next time."
+      }
+    }
     }
     if (counter == 3){
       cout << "Question 4" << endl << "One of the other teachers is hosting a party and has invited you." << endl;
