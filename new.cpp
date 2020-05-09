@@ -1,11 +1,15 @@
 #include <iostream>
 #include <fstream>
+#include <cstdlib>
+#include <ctime> 
+#include <<unistd.h>>
+
 using namespace std;
 int health = 5;
 int wealth = 5;
 int happiness = 5;
 
-int minigame(){
+bool minigame(){
   string * questions;
   questions = new string [10];
   questions[0] = "Who is on the USD$100 bill ?" ;
@@ -23,11 +27,28 @@ int minigame(){
   answers[4] = "Elon Musk";
 	
   int randomnumtracker;
+  string inputanswer;
 
   cout << "Welcome to the minigame, here we will give you a randomly generated question, you will have 15 seconds to answer the question, or else you loose" << endl;
   cout << "Example: Question: What is the name of our planet?" <<endl;
   cout << "         Answer: Earth" << endl;
   cout << "Do remember to capitalize your answers or else they would would be renderded void" << endl; 
+  cout << "Alright, here we go" ;
+  cout << "Here's your question" ;
+  srand(time(NULL));
+  randomnumtracker = rand() % 10;
+  cout << questions[randomnumtracker];
+  cout << "You have 15 seconds to type in your answer" << endl;
+  cin >> inputanswer ;
+  sleep(15);
+  if (inputanswer != answers[randomnumtracker]){
+    cout << "Oh no, you got it wrong, the correct answer is " << answers[randomnumtracker] << endl;
+    return false;
+  }
+  else {
+    cout << "Correct Answer!" << endl;
+    return true;
+  }
   
 }
 
@@ -225,7 +246,12 @@ int teacher(){
       cout << "Happiness = " << health << " / 10" << endl;
       counter += 1;
 	    
-      cout << "POPQUIZ" << minigame()
+      cout << "POPQUIZ" << endl;
+      if (miniquiz()){
+        cout << "Congratulations, you can add a point to any one of your meters";
+      }
+      else{
+      }
     }
     if (counter == 6){
       cout << "Question 7" << endl << "You have recieved a better offer at another school, so your current employer has decided to match that job position, you now have to choose." << endl;
