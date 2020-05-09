@@ -577,17 +577,17 @@ int existing(name, health, wealth, happiness, career){
   cout << "Wealth = " << health << " / 10" << endl;
   cout << "Happiness = " << health << " / 10" << endl;
   cout << “Let’s take you back to the career of” << career;
-  if (career == Gamedeveloper){
+  if (career == "gamedeveloper"){
       Gamedeveloper(counter)
   }
-  if (career ==teacher){
-     Teacher(counter)
+  if (career == "teacher"){
+     teacher(counter)
   }
-  if (career ==doctor){
-    Doctor(counter)
+  if (career == "doctor"){
+    doctor(counter)
   }
-  if (career ==actor ){
-     Actor(counter)
+  if (career == "actor" ){
+     actor(counter)
   }
 }
 
