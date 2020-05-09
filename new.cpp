@@ -11,7 +11,7 @@ int Gamedeveloper(){}
 
 int teacher(){
   int counter = 0;
-  while (health < 1 || wealth < 1 || happiness < 1){
+  while (health >= 1 || wealth >= 1 || happiness >= 1){
     char questioninput;
     if (counter == 0){
       cout << "Question 1" << endl << "Where do you want to teach?" << endl;
@@ -19,23 +19,186 @@ int teacher(){
       cout << "     B.  High School" <<endl;
       cout << "     C.  Middle School" <<endl;
       cout << "     D.  Primary School" << endl;
+      cin >> questioninput ;
 
       if (questioninput == A){
         wealth += 2;
         cout << "Your Wealth increased by 2!" << endl;
       }
-      if (questioninput == A){
+      if (questioninput == B){
         happiness += 2;
+	cout << "Your Happiness increased by 2!" << endl;
       }
-      if (questioninput == A){
+      if (questioninput == C){
         happiness += 1;
+	cout << "Your Happiness increased by 1!" << endl;
       }
-      if (questioninput == A){
+      if (questioninput == D){
         health += 1;
+	cout << "Your Health increased by 1!" << endl;
       }
       cout << "Health = " << health << " / 10" << endl;
       cout << "Wealth = " << health << " / 10" << endl;
       cout << "Happiness = " << health << " / 10" << endl;
+      counter += 1;
+    }
+    if (counter == 1){
+      cout << "Question 2" << endl << "Oh no, you come back home very tired and still have alot to mark, what do you do?" << endl;
+      cout << "     A.  Spend time with your family" << endl;
+      cout << "     B.  Finish your work" <<endl;
+      cout << "     C.  Go to bed" <<endl;
+      cin >> questioninput ;
+
+      if (questioninput == A){
+        Happiness += 2;
+        cout << "Your Happiness increased by 2!" << endl;
+      }
+      if (questioninput == B){
+        happiness -= 2;
+	cout << "Your Happiness decreased by 2!" << endl;
+      }
+      if (questioninput == C){
+        health += 1;
+	cout << "Your Health increased by 1!" << endl;
+      }
+      cout << "Health = " << health << " / 10" << endl;
+      cout << "Wealth = " << health << " / 10" << endl;
+      cout << "Happiness = " << health << " / 10" << endl;
+      counter += 1;
+    }
+     if (counter == 2){
+      cout << "Question 3" << endl << "One of your student bribes you and is willing to pay HKD $1 Million for the exam paper, what do you do?" << endl;
+      cout << "     A.  Take the bribe and give them the exam" << endl;
+      cout << "     B.  Don't take the bribe, but just give them the exam" <<endl;
+      cout << "     C.  Take the bribe, but dont give them the the exam" <<endl;
+      cout << "     D.  Dont take the bribe and report the student" << endl;
+      cin >> questioninput ;
+
+      if (questioninput == A){
+        wealth += 3;
+        cout << "Your Wealth increased by 3!" << endl;
+	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
+	cout << "Restart your career" << endl;
+	counter = 0;
+	health = 5;
+	wealth = 5;
+	happiness = 5;
+      }
+      if (questioninput == B){
+        happiness += 1;
+	cout << "Your Happiness increased by 1!" << endl;
+	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
+	cout << "Restart your career" << endl;
+	counter = 0;
+	health = 5;
+	wealth = 5;
+	happiness = 5;      
+      }
+      if (questioninput == C){
+        wealth += 3;
+	cout << "Your Wealth increased by 3!" << endl;
+	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
+	cout << "Restart your career" << endl;
+	counter = 0;
+	health = 5;
+	wealth = 5;
+	happiness = 5;    
+      }
+      if (questioninput == D){
+        happiness -= 2;
+	cout << "The student got expelled and other students are afraid of you now." << endl;
+	cout << "Your Happiness decreased by 2!" << endl;
+      }
+      cout << "Health = " << health << " / 10" << endl;
+      cout << "Wealth = " << health << " / 10" << endl;
+      cout << "Happiness = " << health << " / 10" << endl;
+      counter += 1;
+    }
+    if (counter == 3){
+      cout << "Question 4" << endl << "One of the other teachers is hosting a party and has invited you." << endl;
+      cout << "     A.  Attend the the party but leave early" << endl;
+      cout << "     B.  Attend the party but stay till the end" <<endl;
+      cout << "     C.  Stay back at the school and finish your work" <<endl;
+      cin >> questioninput ;
+
+      if (questioninput == A){
+        health += 2;
+	cout << "You managed to go to bed early and get all the rest needed"      
+        cout << "Your Health increased by 2!" << endl;
+      }
+      if (questioninput == B){
+        health -= 2;
+	cout << "Wasted!" << endl << "You got drunk and passed out." << endl;
+	cout << "Your health increased by 2!" << endl;
+      }
+      if (questioninput == C){
+        happiness -= 2;
+	cout << "Your Happiness decreased by 2!" << endl;
+      }
+      cout << "Health = " << health << " / 10" << endl;
+      cout << "Wealth = " << health << " / 10" << endl;
+      cout << "Happiness = " << health << " / 10" << endl;
+      counter += 1;
+    }
+    if (counter == 4){
+      cout << "Question 5" << endl << "A school holiday is coming, how do you plan on making your students spend the holiday?" << endl;
+      cout << "     A.  Extra tutorials for everyone even during the holiday" << endl;
+      cout << "     B.  Have a school picnic" <<endl;
+      cout << "     C.  Assign them more homework than they can handle" <<endl;
+      cout << "     D.  Let them take the day off" << endl;
+      cin >> questioninput ;
+
+      if (questioninput == A){
+        happiness += 2;
+	cout << "Your students are not too comfortable with you anymore" << endl;
+        cout << "Your Happiness decreased by 2!" << endl;
+      }
+      if (questioninput == B){
+        health += 1;
+	cout << "Your Health increased by 2!" << endl;
+      }
+      if (questioninput == C){
+        happiness -= 1;
+	cout << "Your Happiness decreased by 1!" << endl;
+      }
+      if (questioninput == D){
+        happiness += 1;
+	cout << "Your Happiness increased by 1!" << endl;
+      }
+      cout << "Health = " << health << " / 10" << endl;
+      cout << "Wealth = " << health << " / 10" << endl;
+      cout << "Happiness = " << health << " / 10" << endl;
+      counter += 1;
+    }
+    if (counter == 5){
+      cout << "Question 6" << endl << "Your students are tired of having in-class lectures and want to do something different, what would you do?" << endl;
+      cout << "     A.  Teach them how to invest in stocks" << endl;
+      cout << "     B.  Enjoy a day out and do some sports" <<endl;
+      cout << "     C.  Watch a movie" <<endl;
+      cout << "     D.  Do nothing special and continue with regular in-class lectures" << endl;
+      cin >> questioninput ;
+
+      if (questioninput == A){
+        wealth += 1;
+	cout << "You and your students earned a little money" << endl;
+        cout << "Your Wealth increased by 1!" << endl;
+      }
+      if (questioninput == B){
+        health += 1;
+	cout << "Your Health increased by 1!" << endl;
+      }
+      if (questioninput == C){
+        happiness += 1;
+	cout << "Your Happiness increased by 1!" << endl;
+      }
+      if (questioninput == D){
+        happiness += 1;
+	cout << "Your Happiness decreased by 1!" << endl;
+      }
+      cout << "Health = " << health << " / 10" << endl;
+      cout << "Wealth = " << health << " / 10" << endl;
+      cout << "Happiness = " << health << " / 10" << endl;
+      counter += 1;
     }
   }
 }
