@@ -539,7 +539,306 @@ int actor(){
 
 
 
-int doctor(){}
+int doctor(){
+  int counter = 0;
+  while (health >= 2 || wealth >= 2 || happiness >= 2){
+    char questioninput;
+    if (counter == 0){
+      cout << "Question 1" << endl << "You find a patient who is in dire need of consultation but may not be able to pay the fees, what do you do?" << endl;
+      cout << "     A.  Do nothing" << endl;
+      cout << "     B.  Let them come in for the consultation for free" <<endl;
+      cout << "     C.  Send them to another public clinic" <<endl;
+      cout << "     D.  Give them the consulation and any assistance they need" << endl;
+      cin >> questioninput ;
+
+      if (questioninput == "A"){
+        happiness -= 2;
+        cout << "Your Happiness decreased by 2!" << endl;
+      }
+      if (questioninput == "B"){
+        happiness += 1;
+        cout << "Your Happiness increased by 1!" << endl;
+      }
+      if (questioninput == "C"){
+        happiness -= 1;
+        cout << "Your Happiness decreased by 1!" << endl;
+      }
+      if (questioninput == "D"){
+        happiness += 2;
+        cout << "Your Health increased by 2!" << endl;
+      }
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
+      counter += 1;
+    }
+    if (counter == 1){
+      cout << "Question 2" << endl << "You realize one of your patients only visits you to so that they can get access to drugs and abuse them, what do you do?" << endl;
+      cout << "     A.  Continue giving them the consulation but no drugs" << endl;
+      cout << "     B.  Give them the drugs but at higher price" <<endl;
+      cout << "     C.  Talk to them about it" <<endl;
+      cout << "     D.  Abuse the drugs along with them" << endl;
+      cin >> questioninput ;
+
+      if (questioninput == "A"){
+        wealth -= 1;
+        cout << "Oh no, they stopped consulting you" << endl;
+        cout << "Your Wealth decreased by 1!" << endl;
+      }
+      if (questioninput == "B"){
+        wealth += 1;
+        cout << "Your Wealth increased by 1!" << endl;
+      }
+      if (questioninput == "C"){
+        happiness += 1;
+        cout << "Yay, they realized what they did was wrong and stopped" << endl;
+        cout << "Your Happiness increased by 1!" << endl;
+      }
+      if (questioninput == "D"){
+        health -= 2;
+        cout << "Another fellow doctor sees you abusing the drugs" << endl;
+        cout << "You're barred from the Medical Council" << endl; 
+        cout << "You need to restart your career" << endl; 
+        counter = -1;
+      	health = 5;
+      	wealth = 5;
+      	happiness = 5;
+      }
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
+      counter += 1;
+    }
+    if (counter == 2){
+      cout << "Question 3" << endl << "There is a patient who just arrived at the hospital and in critical condition and you just ended your shift and might be too tired to operate on the patient, what do you do?
+" << endl;
+      cout << "     A.  Operate on the patient by yourself" << endl;
+      cout << "     B.  Go home, get some rest, then come back and opperate the next day" <<endl;
+      cout << "     C.  Request some other doctor to operate and you are the assistant surgeon" << endl;
+      cin >> questioninput ;
+
+      if (questioninput == "A"){
+        wealth += 1;
+        cout << "Your Wealth increased by 1!" << endl;
+        cout << "Oh no, the operation was a failure, you get fired" << endl;
+        cout << "Restart your career" << endl;
+        counter = -1;
+        health = 5;
+        wealth = 5;
+        happiness = 5;
+      }
+      if (questioninput == "B"){
+        health += 1;
+        cout << "Your Health increased by 1!" << endl;
+        cout << "Oh no, the patient died. You got fired" << endl;
+        cout << "Restart your career" << endl;
+        counter = -1;
+        health = 5;
+        wealth = 5;
+        happiness = 5;
+      }
+      if (questioninput == "C"){
+        happiness += 1;
+        cout << "You improved your relationship with the other doctor"
+        cout << "Your Happiness increased by 1!" << endl;
+      }
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
+      counter += 1;
+
+      string choiceselection;
+      cout << "POPQUIZ" << endl;
+      if (miniquiz()){
+        cout << "Congratulations, you can add a point to any one of your meters" << endl;
+        cout << "Which meter would you like to add a point to ?" << endl;
+        cout << "     A.  Health" << endl;
+        cout << "     B.  Wealth" <<endl;
+        cout << "     C.  Happiness" <<endl;
+        cin >> choiceselection ;
+        if (choiceselection == "A"){
+          health += 1;
+          cout << "Your health increased by 1!" << endl;
+      	}
+      	if (choiceselection == "B"){
+          wealth += 1;
+          cout << "Your Wealth increased by 1!" << endl;
+      	}
+      	if (choiceselection == "C"){
+          happiness += 1;
+          cout << "Your Happiness increased by 1!" << endl;
+      	}
+      	cout << "Health = " << health << endl;
+      	cout << "Wealth = " << wealth << endl;
+      	cout << "Happiness = " << happiness << endl;
+      }
+      else{
+        "Too bad, you can't increase one of your meters, better luck next time."
+      }
+    }
+    if (counter == 3){
+      cout << "Question 4" << endl << "You are in a dillema, there are 3 people applying for 1 vacancy for the position of nurse, what do you do?." << endl;
+      cout << "     A.  A nurse who is great at surgeries but cannot speak english" << endl;
+      cout << "     B.  A nurse who is decently alright at everything but may not listen to instructions" <<endl;
+      cout << "     C.  A nurse who gets the job done ASAP but execution is poor" <<endl;
+      cout << "     D.  You dont hire any because they aren't competent enough" <<endl;
+      cin >> questioninput ;
+
+      if (questioninput == "A"){
+        happiness -= 1;
+        cout << "You spend too much of your time translating things to her"
+        cout << "Your happiness decreased by 1!" << endl;
+      }
+      if (questioninput == "B"){
+        health -= 1;
+        cout << "The nurse has left you annoyed" << endl;
+        cout << "Your health decreased by 1!" << endl;
+      }
+      if (questioninput == "C"){
+        health -= 1;
+        cout << "Your Health decreased by 1!" << endl;
+      }
+      if (questioninput == "D"){
+        wealth += 1;
+        cout << "You took the right decision and now you can earn more" << endl;
+        cout << "Your Wealth increased by 1!" << endl;
+      }
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happpiness << endl;
+      counter += 1;
+    }
+    if (counter == 4){
+      cout << "Question 5" << endl << "You have the day off from the hospital, and finally have some free time, what do you do?" << endl;
+      cout << "     A.  Take the day off and sleepthrough the day" << endl;
+      cout << "     B.  Go golfing with your friends" <<endl;
+      cout << "     C.  Spend time with your family" <<endl;
+      cout << "     D.  Go back to the hospital to work" << endl;
+      cin >> questioninput ;
+
+      if (questioninput == "A"){
+        happiness -= 1;
+        cout << "Your family gets mad at you for not spending time with them" << endl;
+        cout << "Your Happiness decreased by 1!" << endl;
+      }
+      if (questioninput == "B"){
+        happiness -= 2;
+        cout << "Your family gets mad at you for not spending time with them" << endl;
+        cout << "Your Happiness decreased by 2!" << endl;
+      }
+      if (questioninput == "C"){
+        happiness += 1;
+        cout << "You had a great day with your family" << endl;
+        cout << "Your Happiness increased by 1!" << endl;
+      }
+      if (questioninput == "D"){
+        happiness -= 2;
+        cout << "Your family gets mad at you for not spending time with them" << endl;
+        cout << "Your Happiness decreased by 2!" << endl;
+      }
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
+      counter += 1;
+    }
+    if (counter == 5){
+      cout << "Question 6" << endl << "You're on the way back home, and someone has a traumatic pneumothorax on the train station , what do you do?" << endl;
+      cout << "     A.  You operate on the chest" << endl;
+      cout << "     B.  You operate on the abdomen" <<endl;
+      cout << "     C.  You operate on the skull" <<endl;
+      cout << "     D.  You have no idea what that is, and just call 911" << endl;
+      cin >> questioninput ;
+
+      if (questioninput == "A"){
+        wealth += 2;
+        cout << "Good job you operated successfully" << endl;
+        cout << "Your hospital find out and give your reward" << endl;
+        cout << "Your Wealth increased by 2!" << endl;
+      }
+      if (questioninput == "B"){
+        happiness -= 1;
+        cout << "Oh no you are operating the wrong part." << endl;
+        cout << "Luckily there's another doctor nearby to help you." << endl;
+        cout << "Your Happiness decreased by 1!" << endl;
+      }
+      if (questioninput == "C"){
+        happiness -= 1;
+        cout << "Oh no you are operating the wrong part." << endl;
+        cout << "Luckily there's another doctor nearby to help you." << endl;
+        cout << "Your Happiness decreased by 1!" << endl;
+      }
+      if (questioninput == "D"){
+        happiness -= 1;
+        cout << "Oh no, how do you not know this." << endl;
+        cout << "At least you did the most logical thing" << endl;
+        cout << "Your Happiness decreased by 1!" << endl;
+      }
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
+      counter += 1;
+
+
+      string choiceselection;
+      cout << "POPQUIZ" << endl;
+      if (miniquiz()){
+        cout << "Congratulations, you can add a point to any one of your meters" << endl;
+	cout << "Which meter would you like to add a point to ?" << endl;
+	cout << "     A.  Health" << endl;
+        cout << "     B.  Wealth" <<endl;
+        cout << "     C.  Happiness" <<endl;
+	cin >> choiceselection ;
+	if (choiceselection == "A"){
+        health += 1;
+	cout << "Your health increased by 1!" << endl;
+      	}
+      	if (choiceselection == "B"){
+        wealth += 1;
+	cout << "Your Wealth increased by 1!" << endl;
+      	}
+      	if (choiceselection == "C"){
+        happiness += 1;
+	cout << "Your Happiness increased by 1!" << endl;
+      	}
+      	cout << "Health = " << health << " / 10" << endl;
+      	cout << "Wealth = " << health << " / 10" << endl;
+      	cout << "Happiness = " << health << " / 10" << endl;
+      }
+      else{
+        "Too bad, you can't increase one of your meters, better luck next time."
+      }
+    }
+    if (counter == 6){
+      cout << "Question 7" << endl << "You have recieved a better offer at another hospital, so your current employer has decided to match that job position, you now have to choose." << endl;
+      cout << "     A.  Stay at the old hospital with a higher position but the same salary " << endl;
+      cout << "     B.  Go to the other hospital which also gives the higher salary" <<endl;
+      cin >> questioninput ;
+
+      if (questioninput == "A"){
+        happiness += 1;
+        cout << "You decided to stay and realized that you can't leave this amazing hospital" << endl;
+        cout << "Your Happiness increased by 1!" << endl;
+      }
+      if (questioninput == "B"){
+        wealth += 1;
+        cout << "Your Wealth increased by 1!" << endl;
+      }
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
+      cout << "End of Journey, thank you for playing" << endl;
+    }
+  }
+  if (health < 2 || wealth < 2 || happiness < 2){
+    cout << "Oh no one or more of your meters are below 2" << endl;
+    cout << "You will have to restart your career" << endl;
+    counter = 0;
+    health = 5;
+    wealth = 5;
+    happiness = 5;
+  }
+}
+
 
 
 int new(){
