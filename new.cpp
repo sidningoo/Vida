@@ -55,7 +55,274 @@ bool minigame(){
   answers = NULL;
 }
 
-void Gamedeveloper(){}
+void Gamedeveloper(name, counter){
+  while (health >= 2 || wealth >= 2 || happiness >= 2) {
+    char questioninput;
+    if (counter == 0){
+      cout << "Question 1" << endl;
+      cout << "You have just graduated with first class honours and can get a job in the following companies, which one would you pick?" << endl;
+      cout << "A. Sony Computer Entertainment" << endl;
+      cout << "B. Nintendo " << endl;
+      cout << "C. Activision Blizzard " << endl;
+      cout << "D. Rockstar games " << endl;
+
+      cin >> questioninput;
+      if (questioninput == "A"){
+        wealth += 1;
+        cout << "You get very well paid, wealth +1"; << endl;
+      }
+      if (questioninput == "B"){
+        happiness += 1;
+        cout << "You get into one of your dream companies, happiness +1" << endl;
+      }
+      if (questioninput == "C"){
+        happiness += 1;
+        cout << "The director thinks you are lying and rolls his eyes, happiness +1" << endl;
+      }
+      if (questioninput == "D"){
+        wealth += 1;
+        cout << "You get into one of your dream companies, happiness +1" << endl;
+      }
+      cout << "That's a very good start to your career" << endl;
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+    }
+
+
+    // __________________________________________________________________________//
+
+    if (counter == 1){
+      cout << "Question 2" << endl;
+      cout << "Your best friend also works for the same company. Your boss gives you the option to choose to be the leader of either ProjectX or ProjectZ " << endl;
+      cout << "but both of you really want to be leaders of ProjectX. What do you do ?" << endl;
+      cout << "A. Let your friend take the ProjectX" << endl;
+      cout << "B. You take projectX" << endl;
+      cout << "C. You let your boss decide" << endl;
+      cout << "D. You propose to the boss that you do it together, but your boss doesn't like instructions" << endl;
+
+      cin >> questioninput;
+      if (questioninput == "A"){
+        wealth -= 2;
+        cout << "You work as a member for the project and get paid less than what a leader would, wealth -2" << endl;
+      }
+      if (questioninput == "B"){
+        happiness -= 1;
+        cout << "You best friend acts passive aggresive with you , happiness -1" << endl;
+      }
+      if (questioninput == "C"){
+        happiness += 1;
+        cout << "The boss chose you and you and yout best friend is happy for you, happiness +1" << endl;
+      }
+      if (questioninput == "D"){
+        happiness -= 2;
+        cout << "Your boss thinks you are being unprofessional, happiness -2" << endl;
+      }
+      cout << "Health: " << health  << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+
+    }
+
+    //__________________________________________________________________________//
+
+    if (counter == 2){
+
+          cout << "Question 3" << endl;
+          cout << "ProjectX is a success and your team is inviting you for a big party tonight, but it is also your significant other's birthday," << endl;
+          cout << "What do you do?" << endl;
+          cout << "A. You spend time with your significant other" << endl;
+          cout << "B. You go to your teams party" << endl;,
+
+          cin >> questioninput;
+      if (questioninput == "A"){
+        if (minigame())
+          cout << "Your team understands and lets you celebrate the birthday, happiness +1"<< endl;
+          happiness += 1;
+        }
+        else{
+          happiness -= 1;
+          cout << "Your team is unhappy with you, happiness -1" << endl;
+        }
+      }
+      if (questioninput == "B"){
+        if (minigame()){
+          cout << "Your significant other understands and lets you party!"<< endl;
+          happiness += 1;
+        }
+        else{
+          cout << "Your significant other get mad at you" << endl;
+          happiness -= 1;
+        }
+      }
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter =+ 1;
+    }
+
+
+    //__________________________________________________________________________//
+
+    if (counter == 3){
+          cout << "Question 3" << endl;
+          cout << "ProjectX is a success and your team is inviting you for a big party tonight, but it is also your significant other's birthday," << endl;
+          cout << "What do you do?" << endl;
+          cout << "A. You spend time with your significant other" << endl;
+          cout << "B. You go to your teams party" << endl;,
+
+          cin >> questioninput;
+
+      if (questioninput == "A"){
+        happiness -= 1;
+        cout << "It was a test of honesty ! Your boss purposely made the mistake. Now the boss has a bad impression on you!, happiness -1" << endl;
+      }
+      if (questioninput == "B"){
+        happiness -= 1;
+        cout << "It was a test of honesty ! Your boss purposely made the mistake. Now the boss has a bad impression on you!, happiness -1" << endl;
+      }
+      if (questioninput == "C"){
+        happiness -= 1;
+        cout << "It was a test of honesty ! Your boss purposely made the mistake. Now the boss has a bad impression on you!, happiness -1" << endl;
+      }
+      if (questioninput == "D"){
+        happiness += 1;
+        cout << "Your boss thinks you remain neutral" << endl;
+      }
+      cout << "Health: " << health  << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+    }
+
+    //__________________________________________________________________________//
+
+    if (counter == 4){
+      cout << "Question 5" << endl;
+      cout << "You have barely spent anytime with your family, you have always been in front of your screen" << endl;
+      cour << "your therapist has diagnosed you with lonliness. You have to spend time with your family and friends" << endl;
+      cout << "A. You go to maldives with your family" << endl;
+      cout << "B. You continue working to get that promotion as a executive manager " << endl;
+
+      cin >> questioninput;
+      if (questioninput == "A"){
+        health += 2;
+        cout << "you are more internally happy" << endl;
+      }
+      if (questioninput == "B"){
+        if (minigame()){
+          wealth += 2;
+          cout << "Congreatulations, you have gotten the promotion, wealth +2" << endl;
+        }
+        else{
+          health -= 2;
+          cout << "You have overworked yourself, it's very unhealthy for the mind, health -2" << endl;
+        }
+      }
+      cout << "Health: " << health  << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+      }
+
+
+
+    //__________________________________________________________________________//
+
+    if (counter == 5){
+      cout << "Question 6" << endl;
+      cout << "You plan to start your own company, but you don't have enough money, what do you do?" << endl;
+      cout << "A. Gamble all on red" << endl;
+      cout << "B. Take a loan" << endl;
+      cout << "C. Borrow from your boss" << endl;
+      cout << "D. Gamble it all on black" << endl;
+      cin >> questioninput;
+
+      if (questioninput == "A"){
+        if (minigame()){
+          wealth += 1;
+          cout << "Nicely done! You have enough money!" << endl;
+        }
+        else{
+          wealth -= 5;
+          cout << "You've lost it all" << endl;
+        }
+      }
+      if (questioninput == "B"){
+        wealth += 1;
+        cout << "You have enough money to start a company"
+      }
+      if (questioninput == "C"){
+        happiness -= 2;
+        cout << "Your boss sees you as a competitor and fires you" << endl;
+      }
+      if (questioninput == "D"){
+        if (minigame()){
+          wealth += 1;
+          cout << "Nicely done! You have enough money!" << endl;
+        }
+        else{
+          wealth -= 5;
+          cout << "You've lost it all" << endl;
+        }
+      }
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+      }
+
+
+
+    //__________________________________________________________________________//
+
+    if (counter == 6){
+      cout << "Question 7" << endl;
+      cout << "wow, what a run it has been. It's about time you retire. You are considering the following options as your retirement plan."<< endl;
+      cout << "A. Invest in stocks" << endl;
+      cout << "B. Buy a big house by the sea" << endl;
+      cout << "C. Travel around the world" << endl;
+      cout << "D. Donate most of your money to a charity organization" << endl;
+
+      cin >> questioninput;
+
+      if (questioninput == "A"){
+        if (minigame()){
+          wealth += 3;
+          cout << "Nicely done! Your stock is doing well, wealth +3" << endl;
+        }
+        else{
+          wealth -= 5;
+          cout << "You've lost it all, wealth -5" << endl;
+        }
+      }
+      if (questioninput == "B"){
+        happiness += 2;
+        cout << "You live a peaceful life, happiness +2" << endl;
+      }
+      if (questioninput == "C"){
+        happiness += 2;
+        cout << "Your life is really adventurous !, happiness +2" << endl;
+      }
+      if (questioninput == "D"){
+        if (minigame()){
+          happiness += 1;
+          cout << "You feel good about yourself, happiness +1" << endl;
+        }
+        else{
+          happiness -= 2;
+          cout << "You've been scammed !!!"" << endl;
+        }
+      }
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+      }
+}
+
 
 
 void teacher(){
@@ -340,9 +607,267 @@ void teacher(){
   }
 }
 
-void actor(){
-}
 
+void actor(name, counter){
+  while (health >= 2 || wealth >= 2 || happiness >= 2) {
+    char questioninput;
+
+    if (counter == 0){
+      cout << "Question 1" << endl;
+      cout << "You arrive 20 minutes late for an audition.The casting director frowns when you walk in. You respond:" << endl;
+      cout << "A. Do you mind if I change the lines?  " << endl;
+      cout << "B. I’m sorry. I promise it won’t happen again. " << endl;
+      cout << "C. I had a stomachache; I was just a little nervous. " << endl;
+      cout << "D. Sorry! I am very sorry!! " << endl;
+      cin >> questioninput;
+  
+      if (questioninput == "A"){
+        happiness -= 2;
+        cout << "You made the director angry, happiness -2"; << endl;
+      }
+      if (questioninput == "B"){
+        happiness += 1;
+        cout << "The director understands and gives you a chance, happiness +1" << endl;
+      }
+      if (questioninput == "C"){
+        happiness -= 2;
+        cout << "The director thinks you are lying and rolls his eyes, happiness -2" << endl;
+      }
+      if (questioninput == "D"){
+        happiness += 1;
+        cout << "The director understands and lets you off this time, happiness +1" << endl;
+      }
+      cout << "You gave a bad first impression to the rest of the team. So you didn't get through the audition."
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+    }
+    
+    // __________________________________________________________________________//
+
+    if (counter == 1){
+      cout << "Question 2" << endl;
+      cout << "Your agent yells at you because you went late for the audition many actors hope for. You respond:" << endl;
+      cout << "A. Can you get me on the new BCC show?" << endl;
+      cout << "B. They should just offer me the part. I’m so perfect for it." << endl;
+      cout << "C. I’m sorry. It will not happen again" << endl;
+      cout << "D. Whatever, other directors would want me anyway" << endl;
+  
+      cin >> questioninput;
+  
+      if (questioninput == "A"){
+        happiness -= 3;
+        cout << "You come out as very arrogant and the agent leaves you, happiness -3" << endl;
+      }
+      if (questioninput == "B"){
+        happiness -= 3;
+        cout << "You come out as very arrogant and the agent leaves you, happiness -3" << endl;
+      }
+      if (questioninput == "C"){
+        happiness += 1;
+        cout << "Your agent tries to get you another job, happiness +1" << endl;
+      }
+      if (questioninput == "D"){
+        happiness -= 3;
+        cout << "You come out as very arrogant and the agent leaves you, happiness -3" << endl;
+      }
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      cout << "Fortunately, another production company approached you to be in their film as a main character." << endl;
+      counter += 1;
+    }
+
+    //__________________________________________________________________________//
+
+    if (counter == 2){
+      cout << "Question 3" << endl;
+      cout << "Will you accept the offer?" << endl;
+      cout << "A. Yes" << endl;
+      cout << "B. No" << endl;
+  
+      cin >> questioninput;
+  
+      if (questioninput == "A"){
+        happiness += 1;
+        cout << "You are back in the industry and everyone welcomes you, happiness +1" << endl;
+      }
+      if (questioninput == "B"){
+        wealth -= 5;
+        cout << "You are unemployed and in the verge of bankruptcy, wealth -5" << endl;
+      }
+      cout << "Health: " << health  << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+      
+    }
+
+
+
+    //__________________________________________________________________________//
+
+    if (counter == 3){
+      cout << "Question 4" << endl;
+      cout << "You must go through a test to get the job. The question is as follows: Who of the following is not an actor:" << endl;
+      cout << "A. Morgan Freeman" << endl;
+      cout << "B. WIll Smith" << endl;
+      cout << "C. Adriana Alba" << endl;
+      cout << "D. Eiza Ganzalez" << endl;
+  
+      cin >> questioninput;
+  
+      if (questioninput == "A"){
+        wealth -= 3;
+        cout << "How do you not know this??? You only get to be a supporting actor/actress, wealth -3" << endl;
+      }
+      if (questioninput == "B"){
+        wealth -= 3;
+        cout << "How do you not know this??? You only get to be a supporting actor/actress, wealth -3" << endl;
+      }
+      if (questioninput == "C"){
+        wealth += 2;
+        cout << "Congreatulations you got the job! happiness +2" << endl;
+      }
+      if (questioninput == "D"){
+        wealth -= 3;
+        cout << "How do you not know this??? You only get to be a supporting actor/actress, wealth -3" << endl;
+      }
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      cout << "Your acting was remarkable." << endl;
+      counter += 1;
+    }
+    
+    //__________________________________________________________________________//
+
+    if (counter == 4){
+      cout << "Question 5" << endl;
+      cout << "After seeing your performance in the previous show. A famous production company gives you a once in a lifetime opportunity,"" << endl;
+      cour << "but you haven’t spent much time with your family and friends. Will you take the offer or spend time with your family ?" << endl;
+      cout << "A. Take the once in a lifetime opportunity given by the production company " << endl; //play mini game//
+      cout << "B. Spend more time with family " << endl;
+  
+      cin >> questioninput;
+  
+      if (questioninput == "A"){
+        if (minigame())
+          cout << "You got the job !, wealth +1"<< endl;
+          wealth += 1;
+        }
+        else{
+          health -= 2;
+          cout << "You overwork yourself, health -2" << endl;
+        }
+      }
+      if (questioninput == "B"){
+        if (minigame()){
+          cout << "Your relationship with your family has gotten stronger, happiness +1"<< endl;
+          happiness += 1;
+        }
+        else{
+          cout << "You and your sibling get into a big fight, happiness -1" << endl;
+          happiness -= 1;
+        }
+      }
+      cout << "Health: " << health  << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+      }
+
+      
+
+    //__________________________________________________________________________//
+
+    if (counter == 5){
+      cout << "Question 6" << endl;
+      cout << "Wow you are 26 already and looking for a significant other. You have your eyes on four options but you can only choose one:" << endl;
+      cout << "A. Snoop Dawg" << endl;
+      cout << "B. Shawnny Mendes" << endl;
+      cout << "C. Gurl Gadot" << endl;
+      cout << "D. Zenfiya" << endl;
+  
+      cin >> questioninput;
+  
+      if (questioninput == "A"){
+        health -= 3;
+        cout << "Huff puff your lifestyle has become very unhealthy with this man !!!, health -3" << endl;
+      }
+      if (questioninput == "B"){
+        happiness += 2;
+        cout << "He keeps you and your tum tum happy , happiness +2" << endl;
+      }
+      if (questioninput == "C"){
+        happiness += 2;
+        cout << "Nothing much to say ... you are one lucky person, happiness +2" << endl;
+      }
+      if (questioninput == "D"){
+        happiness += 2;
+        cout << "You guys are a power couple, totally unstoppable, happiness +3" << endl;
+      }
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+    }
+
+
+    //__________________________________________________________________________//
+
+    if (counter == 6){
+      cout << "Question 7" << endl;
+      cout << "wow, what a run it has been. It's about time you retire. You are considering the following options as your retirement plan."<< endl;
+      cout << "A. Invest in stocks" << endl;
+      cout << "B. Buy a big house by the sea" << endl;
+      cout << "C. Travel around the world" << endl;
+      cout << "D. Donate most of your money to a charity organization" << endl;
+
+      cin >> questioninput;
+
+      if (questioninput == "A"){
+        if (minigame()){
+          wealth += 3;
+          cout << "Nicely done! Your stock is doing well, wealth +3" << endl;
+        }
+        else{
+          wealth -= 5;
+          cout << "You've lost it all, wealth -5" << endl;
+        }
+      }
+      if (questioninput == "B"){
+        happiness += 2;
+        cout << "You live a peaceful life, happiness +2" << endl;
+      }
+      if (questioninput == "C"){
+        happiness += 2;
+        cout << "Your life is really adventurous !, happiness +2" << endl;
+      }
+      if (questioninput == "D"){
+        if (minigame()){
+          happiness += 1;
+          cout << "You feel good about yourself, happiness +1" << endl;
+        }
+        else{
+          happiness -= 2;
+          cout << "You've been scammed !!!"" << endl;
+        }
+      cout << "Health: " << health << endl;
+      cout << "Wealth: " << wealth << endl;
+      cout << "Happiness: " << happiness << endl;
+      counter += 1;
+      }
+    if (health =< 2 || wealth =< 2 || happiness =< 2){
+      cout << "Oh no one or more of your meters are below 3" << endl;
+      cout << "You will have to restart your career" << endl;
+      counter = 0;
+      health = 5;
+      wealth = 5;
+      happiness = 5;
+    }
+}
 
 
 void doctor(counter){
