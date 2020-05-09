@@ -54,5 +54,12 @@ ________________________________________________________________________________
 ***5. Dynamic Memory Management***
 -	Implementation of dynamic arrays when needed. 
 ________________________________________________________________________________________________________________________________________
+**Non-Standard C++ Libraries***
+-	#include <cstdlib> //for calling srand(), rand()
+-	#include <ctime> // for calling time()
+-	#include <unistd.h> // for calling sleep()
+-	#include <windows.h> // for calling sleep()
 
+________________________________________________________________________________________________________________________________________
+**Compilation and Execution instruction**
 
