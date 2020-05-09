@@ -60,7 +60,7 @@ int Gamedeveloper(){}
 
 int teacher(){
   int counter = 0;
-  while (health >= 1 || wealth >= 1 || happiness >= 1){
+  while (health >= 3 || wealth >= 3 || happiness >= 3){
     char questioninput;
     if (counter == 0){
       cout << "Question 1" << endl << "Where do you want to teach?" << endl;
