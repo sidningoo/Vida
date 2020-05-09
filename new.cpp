@@ -541,7 +541,7 @@ int actor(){
 
 int doctor(){
   int counter = 0;
-  while (health >= 2 || wealth >= 2 || happiness >= 2){
+  while (health >= 3 || wealth >= 3 || happiness >= 3){
     char questioninput;
     if (counter == 0){
       cout << "Question 1" << endl << "You find a patient who is in dire need of consultation but may not be able to pay the fees, what do you do?" << endl;
