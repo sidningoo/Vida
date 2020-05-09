@@ -345,8 +345,7 @@ void actor(){
 
 
 
-void doctor(){
-  int counter = 0;
+void doctor(counter){
   while (health >= 2 || wealth >= 2 || happiness >= 2){
     char questioninput;
     if (counter == 0){
@@ -650,7 +649,7 @@ void doctor(){
 int new(){
   string name;
   char pickcareer;
-  Int counter=0;
+  int counter = 0;
 
   cout << "Greetings, please enter your name:" << endl;
   cin >> name ;
@@ -660,7 +659,7 @@ int new(){
   cout << "     B.  Teacher" <<endl;
   cout << "     C.  Doctor" <<endl;
   cout << "     D.  Actor" << endl;
-  cin << pickcareer;
+  cin >> pickcareer;
   if (pickcareer == "A"){
     Gamedeveloper(counter)
   }
@@ -676,12 +675,12 @@ int new(){
 }
 
 int existing(name, health, wealth, happiness, career){
-  cout << "Hey, ” << name <<  "welcome back !" << endl;
+  cout << "Hey, " << name << "welcome back !" << endl;
   cout << "Below were your HWH meters" << endl;
-  cout << "Health = " << health << " / 10" << endl;
-  cout << "Wealth = " << health << " / 10" << endl;
-  cout << "Happiness = " << health << " / 10" << endl;
-  cout << “Let’s take you back to the career of” << career;
+  cout << "Health = " << health << endl;
+  cout << "Wealth = " << wealth << endl;
+  cout << "Happiness = " << happiness << endl;
+  cout << "Let’s take you back to the career of" << career;
   if (career == "gamedeveloper"){
       Gamedeveloper(counter)
   }
