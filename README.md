@@ -18,19 +18,12 @@ Vida
 
 **Concept and rules.**
 
-This game simulates a person’s travel through his or her life, from college to retirement, with jobs, marriage and possible children along the way. In life, we often find it difficult to strike a balance between health, wealth and happiness.The player will start off his life journey starting by choosing a career. In this game, we prompt users to make a series of life decisions, one decision leads to another, each decision affects the health, wealth and happiness meters (HWH meters). As the player’s life goes on, he/she may encounter some quizzes that will eventually lead them to their choice in picking a career, house, daily life decisions which eventually affects their meters. The player will start off with 5 points in each meter, where the maximum points is 10 points. The objective of the game is to make decisions that will keep all 3 meters roughly balanced until retirement. Addition and deduction of points will happen corresponding to player made decisions. If either one of the three meters falls under a certain point, they would fall into difficult times (e.g. bankruptcy, divorce, mid-life crisis, unemployment, etc) .
+This game simulates a person’s travel through his or her life, from college to retirement, with jobs, marriage and possible children along the way. In life, we often find it difficult to strike a balance between health, wealth and happiness.The player will start off his life journey starting by choosing a career. In this game, we prompt users to make a series of decisions related to their career, each decision affects the health, wealth and happiness meters (HWH meters). As the player’s life goes on, he/she may encounter some quizzes that might be benficial to them or theymight not. The player will start off with 5 points in each meter, where the objective of the game is to make decisions that will keep all 3 meters roughly balanced until retirement. Addition and deduction of points will happen corresponding to player made decisions. If either one of the three meters falls under a certain point, they would fall into difficult times (e.g. bankruptcy, divorce, mid-life crisis, unemployment, etc) .
 
 ________________________________________________________________________________________________________________________________________
 **List of features & functions:**
 
-***1. Pop-up questions to make daily decisions***
-
--	This function will randomly throw questions to the player to choose between 2 activities at any point of the game. These 		questions ultimately affect their 
-
--	The questions are simple questions like “Go out with friends or with family?”
-
-
-***2. Mini-game redirector*** 
+***1. Mini-game redirector*** 
 
 -	For certain decisions made, the user would have to win a mini-game to complete the desired action. For example, if the user
 	chooses to make a risky investment, he/she will have to play the mini-game to make the investment. If the player wins, he/she 
@@ -38,17 +31,17 @@ ________________________________________________________________________________
 	the risk. 
 
 
-***3. Health, Wealth & Happiness (HWH) meter counter***
+***2. Health, Wealth & Happiness (HWH) meter counter***
 
 -	This function will add and subtract points from respective meters based on player decisions.
 
 -	If either one of the meters fall under 5 points, this function will redirect the player to one of the respective functions.
 
 
-***4. Save game function***
+***3. Save game function***
 
 -	The game would be dealing with each level recognized with a number. Once the player enters the command to save the game, the 
-	players game progress (eg. Game Level, HWH meters, career, marital status, etc.) would be saved in a text file saved in the 
+	players game progress (eg. Game Level, HWH meters, career, etc.) would be saved in a text file saved in the 
 	working directory of the game file.
 
 -	Once the game is relaunched, the game would detect for any saved game files in the directory, and the player can choose if they 
