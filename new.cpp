@@ -76,19 +76,19 @@ int teacher(){
       }
       if (questioninput == "B"){
         happiness += 2;
-	cout << "Your Happiness increased by 2!" << endl;
+        cout << "Your Happiness increased by 2!" << endl;
       }
       if (questioninput == "C"){
         happiness += 1;
-	cout << "Your Happiness increased by 1!" << endl;
+        cout << "Your Happiness increased by 1!" << endl;
       }
       if (questioninput == "D"){
         health += 1;
-	cout << "Your Health increased by 1!" << endl;
+        cout << "Your Health increased by 1!" << endl;
       }
-      cout << "Health = " << health << " / 10" << endl;
-      cout << "Wealth = " << health << " / 10" << endl;
-      cout << "Happiness = " << health << " / 10" << endl;
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
       counter += 1;
     }
     if (counter == 1){
@@ -104,15 +104,15 @@ int teacher(){
       }
       if (questioninput == "B"){
         happiness -= 2;
-	cout << "Your Happiness decreased by 2!" << endl;
+        cout << "Your Happiness decreased by 2!" << endl;
       }
       if (questioninput == "C"){
         health += 1;
-	cout << "Your Health increased by 1!" << endl;
+        cout << "Your Health increased by 1!" << endl;
       }
-      cout << "Health = " << health << " / 10" << endl;
-      cout << "Wealth = " << health << " / 10" << endl;
-      cout << "Happiness = " << health << " / 10" << endl;
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
       counter += 1;
     }
      if (counter == 2){
@@ -126,72 +126,71 @@ int teacher(){
       if (questioninput == "A"){
         wealth += 3;
         cout << "Your Wealth increased by 3!" << endl;
-	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
-	cout << "Restart your career" << endl;
-	counter = 0;
-	health = 5;
-	wealth = 5;
-	happiness = 5;
+        cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
+        cout << "Restart your career" << endl;
+        counter = -1;
+        health = 5;
+        wealth = 5;
+        happiness = 5;
       }
       if (questioninput == "B"){
         happiness += 1;
-	cout << "Your Happiness increased by 1!" << endl;
-	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
-	cout << "Restart your career" << endl;
-	counter = 0;
-	health = 5;
-	wealth = 5;
-	happiness = 5;      
+        cout << "Your Happiness increased by 1!" << endl;
+        cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
+        cout << "Restart your career" << endl;
+        counter = -1;
+        health = 5;
+        wealth = 5;
+        happiness = 5;
       }
       if (questioninput == "C"){
         wealth += 3;
-	cout << "Your Wealth increased by 3!" << endl;
-	cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
-	cout << "Restart your career" << endl;
-	counter = 0;
-	health = 5;
-	wealth = 5;
-	happiness = 5;    
+        cout << "Your Wealth increased by 3!" << endl;
+        cout << "Oh no, another teacher found out that you took a bribe, and you get fired" << endl;
+        cout << "Restart your career" << endl;
+        counter = -1;
+        health = 5;
+        wealth = 5;
+        happiness = 5;
       }
       if (questioninput == "D"){
         happiness -= 2;
-	cout << "The student got expelled and other students are afraid of you now." << endl;
-	cout << "Your Happiness decreased by 2!" << endl;
+        cout << "The student got expelled and other students are afraid of you now." << endl;
+        cout << "Your Happiness decreased by 2!" << endl;
       }
-      cout << "Health = " << health << " / 10" << endl;
-      cout << "Wealth = " << health << " / 10" << endl;
-      cout << "Happiness = " << health << " / 10" << endl;
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
       counter += 1;
       
       string choiceselection;
       cout << "POPQUIZ" << endl;
       if (miniquiz()){
         cout << "Congratulations, you can add a point to any one of your meters" << endl;
-	cout << "Which meter would you like to add a point to ?" << endl;
-	cout << "     A.  Health" << endl;
+        cout << "Which meter would you like to add a point to ?" << endl;
+        cout << "     A.  Health" << endl;
         cout << "     B.  Wealth" <<endl;
         cout << "     C.  Happiness" <<endl;
-	cin >> choiceselection ;
-	if (choiceselection == "A"){
-        health += 1;
-	cout << "Your health increased by 1!" << endl;
+        cin >> choiceselection ;
+        if (choiceselection == "A"){
+          health += 1;
+          cout << "Your health increased by 1!" << endl;
       	}
       	if (choiceselection == "B"){
-        wealth += 1;
-	cout << "Your Wealth increased by 1!" << endl;
+          wealth += 1;
+          cout << "Your Wealth increased by 1!" << endl;
       	}
       	if (choiceselection == "C"){
-        happiness += 1;
-	cout << "Your Happiness increased by 1!" << endl;
+          happiness += 1;
+          cout << "Your Happiness increased by 1!" << endl;
       	}
-      	cout << "Health = " << health << " / 10" << endl;
-      	cout << "Wealth = " << health << " / 10" << endl;
-      	cout << "Happiness = " << health << " / 10" << endl;
+      	cout << "Health = " << health << endl;
+      	cout << "Wealth = " << wealth << endl;
+      	cout << "Happiness = " << happiness << endl;
       }
       else{
         "Too bad, you can't increase one of your meters, better luck next time."
       }
-    }
     }
     if (counter == 3){
       cout << "Question 4" << endl << "One of the other teachers is hosting a party and has invited you." << endl;
@@ -202,17 +201,17 @@ int teacher(){
 
       if (questioninput == "A"){
         health += 2;
-	cout << "You managed to go to bed early and get all the rest needed"      
+        cout << "You managed to go to bed early and get all the rest needed" << endl;
         cout << "Your Health increased by 2!" << endl;
       }
       if (questioninput == "B"){
         health -= 2;
-	cout << "Wasted!" << endl << "You got drunk and passed out." << endl;
-	cout << "Your health increased by 2!" << endl;
+        cout << "Wasted!" << endl << "You got drunk and passed out." << endl;
+        cout << "Your health decreased by 2!" << endl;
       }
       if (questioninput == "C"){
         happiness -= 2;
-	cout << "Your Happiness decreased by 2!" << endl;
+        cout << "Your Happiness decreased by 2!" << endl;
       }
       cout << "Health = " << health << " / 10" << endl;
       cout << "Wealth = " << health << " / 10" << endl;
@@ -244,9 +243,9 @@ int teacher(){
         happiness += 1;
 	cout << "Your Happiness increased by 1!" << endl;
       }
-      cout << "Health = " << health << " / 10" << endl;
-      cout << "Wealth = " << health << " / 10" << endl;
-      cout << "Happiness = " << health << " / 10" << endl;
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
       counter += 1;
     }
     if (counter == 5){
@@ -259,51 +258,52 @@ int teacher(){
 
       if (questioninput == "A"){
         wealth += 1;
-	cout << "You and your students earned a little money" << endl;
+        cout << "You and your students earned a little money" << endl;
         cout << "Your Wealth increased by 1!" << endl;
       }
       if (questioninput == "B"){
         health += 1;
-	cout << "Your Health increased by 1!" << endl;
+        cout << "Your Health increased by 1!" << endl;
       }
       if (questioninput == "C"){
         happiness += 1;
-	cout << "Your Happiness increased by 1!" << endl;
+        cout << "Your Happiness increased by 1!" << endl;
       }
       if (questioninput == "D"){
         happiness += 1;
-	cout << "Your Happiness decreased by 1!" << endl;
+        cout << "Your Happiness decreased by 1!" << endl;
       }
-      cout << "Health = " << health << " / 10" << endl;
-      cout << "Wealth = " << health << " / 10" << endl;
-      cout << "Happiness = " << health << " / 10" << endl;
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
       counter += 1;
+    
       
 	    
       string choiceselection;
       cout << "POPQUIZ" << endl;
       if (miniquiz()){
         cout << "Congratulations, you can add a point to any one of your meters" << endl;
-	cout << "Which meter would you like to add a point to ?" << endl;
-	cout << "     A.  Health" << endl;
+        cout << "Which meter would you like to add a point to ?" << endl;
+        cout << "     A.  Health" << endl;
         cout << "     B.  Wealth" <<endl;
         cout << "     C.  Happiness" <<endl;
-	cin >> choiceselection ;
-	if (choiceselection == "A"){
-        health += 1;
-	cout << "Your health increased by 1!" << endl;
+        cin >> choiceselection ;
+        if (choiceselection == "A"){
+          health += 1;
+          cout << "Your health increased by 1!" << endl;
       	}
       	if (choiceselection == "B"){
-        wealth += 1;
-	cout << "Your Wealth increased by 1!" << endl;
+          wealth += 1;
+          cout << "Your Wealth increased by 1!" << endl;
       	}
       	if (choiceselection == "C"){
-        happiness += 1;
-	cout << "Your Happiness increased by 1!" << endl;
+          happiness += 1;
+          cout << "Your Happiness increased by 1!" << endl;
       	}
-      	cout << "Health = " << health << " / 10" << endl;
-      	cout << "Wealth = " << health << " / 10" << endl;
-      	cout << "Happiness = " << health << " / 10" << endl;
+      	cout << "Health = " << health << endl;
+      	cout << "Wealth = " << wealth << endl;
+      	cout << "Happiness = " << happiness << endl;
       }
       else{
         "Too bad, you can't increase one of your meters, better luck next time."
@@ -317,21 +317,21 @@ int teacher(){
 
       if (questioninput == "A"){
         happiness += 1;
-	cout << "You decided to stay and realized that you can't leave this amazing school" << endl;
+        cout << "You decided to stay and realized that you can't leave this amazing school" << endl;
         cout << "Your Happiness increased by 1!" << endl;
       }
       if (questioninput == "B"){
         wealth += 1;
-	cout << "Your Wealth increased by 1!" << endl;
+        cout << "Your Wealth increased by 1!" << endl;
       }
-      cout << "Health = " << health << " / 10" << endl;
-      cout << "Wealth = " << health << " / 10" << endl;
-      cout << "Happiness = " << health << " / 10" << endl;
-      counter += 1;
+      cout << "Health = " << health << endl;
+      cout << "Wealth = " << wealth << endl;
+      cout << "Happiness = " << happiness << endl;
+      cout << "End of Journey, thank you for playing" << endl;
     }
   }
-  if (health < 1 || wealth < 1 || happiness < 1){
-    cout << "Oh no one or more of your meters are below 1" << endl;
+  if (health < 3 || wealth < 3 || happiness < 3){
+    cout << "Oh no one or more of your meters are below 3" << endl;
     cout << "You will have to restart your career" << endl;
     counter = 0;
     health = 5;
@@ -541,7 +541,7 @@ int actor(){
 
 int doctor(){
   int counter = 0;
-  while (health >= 3 || wealth >= 3 || happiness >= 3){
+  while (health >= 2 || wealth >= 2 || happiness >= 2){
     char questioninput;
     if (counter == 0){
       cout << "Question 1" << endl << "You find a patient who is in dire need of consultation but may not be able to pay the fees, what do you do?" << endl;
@@ -783,26 +783,26 @@ int doctor(){
       cout << "POPQUIZ" << endl;
       if (miniquiz()){
         cout << "Congratulations, you can add a point to any one of your meters" << endl;
-	cout << "Which meter would you like to add a point to ?" << endl;
-	cout << "     A.  Health" << endl;
+        cout << "Which meter would you like to add a point to ?" << endl;
+        cout << "     A.  Health" << endl;
         cout << "     B.  Wealth" <<endl;
         cout << "     C.  Happiness" <<endl;
-	cin >> choiceselection ;
-	if (choiceselection == "A"){
-        health += 1;
-	cout << "Your health increased by 1!" << endl;
+        cin >> choiceselection ;
+        if (choiceselection == "A"){
+          health += 1;
+          cout << "Your health increased by 1!" << endl;
       	}
       	if (choiceselection == "B"){
-        wealth += 1;
-	cout << "Your Wealth increased by 1!" << endl;
+          wealth += 1;
+          cout << "Your Wealth increased by 1!" << endl;
       	}
       	if (choiceselection == "C"){
-        happiness += 1;
-	cout << "Your Happiness increased by 1!" << endl;
+          happiness += 1;
+          cout << "Your Happiness increased by 1!" << endl;
       	}
-      	cout << "Health = " << health << " / 10" << endl;
-      	cout << "Wealth = " << health << " / 10" << endl;
-      	cout << "Happiness = " << health << " / 10" << endl;
+      	cout << "Health = " << health << endl;
+      	cout << "Wealth = " << wealth << endl;
+      	cout << "Happiness = " << happiness << endl;
       }
       else{
         "Too bad, you can't increase one of your meters, better luck next time."
@@ -829,8 +829,8 @@ int doctor(){
       cout << "End of Journey, thank you for playing" << endl;
     }
   }
-  if (health < 2 || wealth < 2 || happiness < 2){
-    cout << "Oh no one or more of your meters are below 2" << endl;
+  if (health < 3 || wealth < 3 || happiness < 3){
+    cout << "Oh no one or more of your meters are below 3" << endl;
     cout << "You will have to restart your career" << endl;
     counter = 0;
     health = 5;
