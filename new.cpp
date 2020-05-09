@@ -5,6 +5,31 @@ int health = 5;
 int wealth = 5;
 int happiness = 5;
 
+int minigame(){
+  string * questions;
+  questions = new string [10];
+  questions[0] = "Who is on the USD$100 bill ?" ;
+  questions[1] = "What is the capital of Canada?" ;
+  questions[2] = "What is the currency in Turkey?";
+  questions[3] = "Which country has most FIFA World Cup Wins? ";
+  questions[4] = "Who is the founder of SpaceX?";
+	
+  string * answers;
+  answers = new string [10];
+  answers[0] = "Benjamin Franklin";
+  answers[1] = "Ottawa";
+  answers[2] = "Lira";
+  answers[3] = "Brazil";
+  answers[4] = "Elon Musk";
+	
+  int randomnumtracker;
+
+  cout << "Welcome to the minigame, here we will give you a randomly generated question, you will have 15 seconds to answer the question, or else you loose" << endl;
+  cout << "Example: Question: What is the name of our planet?" <<endl;
+  cout << "         Answer: Earth" << endl;
+  cout << "Do remember to capitalize your answers or else they would would be renderded void" << endl; 
+  
+}
 
 int Gamedeveloper(){}
 
@@ -186,6 +211,36 @@ int teacher(){
       if (questioninput == B){
         health += 1;
 	cout << "Your Health increased by 1!" << endl;
+      }
+      if (questioninput == C){
+        happiness += 1;
+	cout << "Your Happiness increased by 1!" << endl;
+      }
+      if (questioninput == D){
+        happiness += 1;
+	cout << "Your Happiness decreased by 1!" << endl;
+      }
+      cout << "Health = " << health << " / 10" << endl;
+      cout << "Wealth = " << health << " / 10" << endl;
+      cout << "Happiness = " << health << " / 10" << endl;
+      counter += 1;
+	    
+      cout << "POPQUIZ" << minigame()
+    }
+    if (counter == 6){
+      cout << "Question 7" << endl << "You have recieved a better offer at another school, so your current employer has decided to match that job position, you now have to choose." << endl;
+      cout << "     A.  Stay at the old school with a higher position but the same salary " << endl;
+      cout << "     B.  Go to the other school which also gives the higher salary" <<endl;
+      cin >> questioninput ;
+
+      if (questioninput == A){
+        happiness += 1;
+	cout << "You decided to stay and realized that you can't leave this amazing school" << endl;
+        cout << "Your Happiness increased by 1!" << endl;
+      }
+      if (questioninput == B){
+        wealth += 1;
+	cout << "Your Wealth increased by 1!" << endl;
       }
       if (questioninput == C){
         happiness += 1;
